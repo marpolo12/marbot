@@ -5,14 +5,16 @@ Bot WA auto reply sederhana.
 ## 📌 Cara Pasang di Termux
 
 1. Update & install:
-pkg update && pkg upgrade 
 
+
+pkg update && pkg upgrade 
 
 pkg install git
 
 pkg install nodejs
 
 pkg install qrencode
+
 
 2. Clone repo:
 
@@ -38,4 +40,4 @@ node bot.js
 - Tekan CTRL+C untuk berhenti.
 
 
-## MARPOLO
+## MARPOLO 🤗🤗🤗🤗🤗🤗🤗

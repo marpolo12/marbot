@@ -36,3 +36,6 @@ node bot.js
 
 - Scan QR WhatsApp di `node bot.js` pertama kali.
 - Tekan CTRL+C untuk berhenti.
+
+
+## MARPOLO

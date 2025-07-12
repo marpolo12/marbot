@@ -48,7 +48,13 @@ async function startBot() {
 
     console.log(`📥 Pesan masuk dari ${from}: ${text}`);
 
+    const { kirimSpam } = require('./spam.js');
+    if (text.toLowerCase() === 'gas spam') {
+    await kirimSpam(sock, from);
+   }
+
     const replies = {
+      '.s': 'mohon maaf bot nya tidak ada fitur membuat sticker',
       'rusia': 'Rusia adalah negara terluas di dunia yang membentang dari Eropa Timur hingga Asia Utara dengan luas wilayah lebih dari 17 juta km persegi. Ibukotanya adalah Moskow, yang juga menjadi pusat pemerintahan, budaya, dan ekonomi. Rusia dikenal dengan sejarah kekaisaran, Revolusi Bolshevik, serta era Uni Soviet yang pernah menjadi salah satu negara adidaya. Negara ini memiliki kekayaan alam melimpah seperti minyak, gas alam, dan mineral. Selain itu, Rusia memiliki keindahan arsitektur khas seperti Kremlin, Katedral St. Basil, dan Trans-Siberian Railway yang terkenal sebagai jalur kereta terpanjang di dunia.',
       'india': 'India adalah negara di Asia Selatan dengan populasi terbesar kedua di dunia setelah China, dengan lebih dari 1,4 miliar jiwa. Ibukotanya adalah New Delhi, sedangkan kota terbesarnya adalah Mumbai. India dikenal sebagai negara dengan keanekaragaman budaya, agama, bahasa, dan tradisi yang sangat kaya. Negara ini merupakan tempat lahirnya agama Hindu, Buddha, Jainisme, dan Sikhisme. India juga terkenal dengan industri film Bollywood yang mendunia. Di bidang teknologi, India menjadi salah satu pusat pengembangan IT terbesar dengan banyak tenaga profesional yang bekerja di bidang teknologi global.',
       'jerman': 'Jerman adalah negara di Eropa Tengah yang memiliki peran penting dalam sejarah Eropa dan dunia, terutama pada abad ke-20. Ibukotanya adalah Berlin, yang juga dikenal sebagai pusat budaya dan seni. Jerman memiliki perekonomian terbesar di Eropa dan salah satu yang terkuat di dunia, terkenal dengan industri otomotifnya seperti Mercedes-Benz, BMW, dan Volkswagen. Negara ini juga memiliki sistem pendidikan tinggi yang diakui dunia, dengan banyak universitas bergengsi. Jerman memiliki warisan budaya yang kaya mulai dari musik klasik hingga arsitektur kastil kuno dan kota-kota bersejarah.',
